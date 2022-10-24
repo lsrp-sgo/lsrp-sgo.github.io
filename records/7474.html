@@ -3,6 +3,42 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+.dropbtn {
+  border: none;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  background-color: #e7e7e7
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e7e7e7;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ddd;}
+
 .btn {
   border: none;
   color: white;
@@ -20,7 +56,13 @@
 <h1>Record #7474</h1>
 
 <a href="/records/docs/7474"><button class="btn default">Warrant PDF</button></a>
-<a href="/records/transcripts/7474"><button class="btn default">Transcript</button></a>
+<div class="dropdown">
+  <button class="dropbtn">Transcript</button>
+  <div class="dropdown-content">
+    <a href="/records/transcripts/7474-1">7474-1</a>
+    <a href="/records/transcripts/7474-2">7474-2</a>
+  </div>
+</div>
 
 </body>
 </html>
