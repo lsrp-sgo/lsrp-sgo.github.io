@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2>Court Records</h2>
+<p>All court records can be viewed here. Looking for firearm registrations, traffic points, or other types of DRO records? Click <a href="/other.md">here</a>.</p>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Input the defendant's name.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:32%;">Defendant's Name</th>
+    <th style="width:17%;">Type</th>
+    <th style="width:17%;">Status</th>
+    <th style="width:17%;">Judge</th>
+    <th style="width:17%;">Record ID</th>
+  </tr>
+  <tr>
+    <td><a href="/records/7474">George Philips</a></td>
+    <td><a href="/records/7474">Warrant</a></td>
+    <td><a href="/records/7474">Served</a></td>
+    <td><a href="/records/7474">Vasek Stolba</a></td>
+    <td><a href="/records/7474">7474</a></td>
+  </tr>
+  <tr>
+    <td><a href="/records/7645">Gary West</a></td>
+    <td><a href="/records/7645">Warrant</a></td>
+    <td><a href="/records/7645">Active</a></td>
+    <td><a href="/records/7645">Vasek Stolba</a></td>
+    <td><a href="/records/7645">7645</a></td>
+  </tr>
+  <tr>
+  	 <td><a href="/records/7651">Leo Hunterson</a></td>
+    <td><a href="/records/7651">Warrant</a></td>
+    <td><a href="/records/7651">Active</a></td>
+    <td><a href="/records/7651">Vasek Stolba</a></td>
+    <td><a href="/records/7651">7651</a></td>
+   </tr>  
+   <tr>
+  	<td><a href="/records/8777">Chris Kay</a></td>
+    <td><a href="/records/8777">Warrant</a></td>
+    <td><a href="/records/8777">Active</a></td>
+    <td><a href="/records/8777">Vasek Stolba</a></td>
+    <td><a href="/records/8777">8777</a></td>
+   </tr>
+   <tr>
+  	<td><a href="/records/8841">Logan Miller</a></td>
+    <td><a href="/records/8841">Warrant</a></td>
+    <td><a href="/records/8841">Active</a></td>
+    <td><a href="/records/8841">Vasek Stolba</a></td>
+    <td><a href="/records/8841">8841</a></td>
+   </tr>
+</table>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
+</body>
+</html>
