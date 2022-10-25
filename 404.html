@@ -13,8 +13,8 @@
 
       .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
 
-      a { color: #4183c4; text-decoration: none; }
-      a:hover { text-decoration: underline; }
+      a { color: rgba(0, 0, 0, 0.5); text-decoration: none; }
+      a:hover { text-decoration: none; }
 
       h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
       p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
@@ -32,7 +32,62 @@
         font-size: 14px;
         margin: 0 10px;
       }
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
     </style>
   </head>
   <body data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
@@ -47,9 +102,9 @@
       </p>
 
       <p>
-        If you continue to experience this issue, please contact the site administrator, or open a ticket in the District Records Office server.
+        If you continue to experience this issue, please contact the <span class="popup" onmouseover="myFunction()" style="text-decoration:underline">site administrator<span class="popuptext" id="myPopup">CCP_UNIT0002#1910</span></span>, or open a ticket in the District Records Office server.
       </p>
-
+      
       <div id="suggestions">
         <a href="https://discord.gg/NT8kDSrbt6">Discord Server</a> —
         <a href="https://githubstatus.com">Github Status</a>
@@ -60,5 +115,12 @@
       </div>
 
     </div>
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 </body>
 </html>
