@@ -103,23 +103,23 @@
 
     <div class="container">
 
-      <h1>404</h1>
-      <p><strong>Page not found</strong></p>
+      <h1><div class="blink">404</div></h1>
+        <hr>
+      <p><strong>Page not found</p>
 
       <p>
         This page might be under reconstruction, is currently being created, or might have never existed...
       </p>
 
       <p>
-        If you continue to experience this issue, please contact the <span class="popup" onmouseover="myFunction()" style="text-decoration:underline">site administrator<span class="popuptext" id="myPopup">CCP_UNIT0002#1910 or RossM.#9999</span></span>, or open a ticket in the District Records Office server.
+        If you continue to experience this issue, please contact the <span class="popup" onmouseover="myFunction()" style="text-decoration:underline">site administrator(s)<span class="popuptext" id="myPopup">CCP_UNIT0002#1910 or RossM.#9999</span></span>, or open a ticket in the District Records Office server.
       </p>
 
 <a href="/index.html" target="_self"><button class="btn default">Return to Menu</button></a>
       
       <div id="suggestions">
         <a href="https://discord.gg/NT8kDSrbt6">Discord Server</a> —
-        <a href="https://status.rlmtech.xyz/">Host Status</a> —
-	<a href="https://status.github.com">GitHub Status</a>
+        <a href="https://status.rlmtech.xyz/">HostMaster Status</a>
       </div>
 
       <div style="margin-top:25px;">
@@ -135,4 +135,15 @@ function myFunction() {
 }
 </script>
 </body>
+
+<style>.blink {
+    animation: blinker 1s linear infinite;
+    display: inline;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}</style>
 </html>
