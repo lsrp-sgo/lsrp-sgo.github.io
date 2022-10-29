@@ -1,3 +1,3 @@
   // Creditary Material.
 
-console.log('%cNulled - temp', 'color: green; font-size: 20px;');
+console.log('%cOriginal Concept: Vasek_Stolba, Help By: Ross M.', 'color: green; font-size: 20px;');
