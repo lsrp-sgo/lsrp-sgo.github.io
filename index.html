@@ -5,17 +5,114 @@
     <!--<body background="https://images2.alphacoders.com/238/238870.jpg">-->
     <link rel="icon" href="/images/SGO-logo.png">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 </head>
 <body>
+<!--<script>window.alert("This service will be undergoing maintenance starting: 12/20/2022 - 01/05/2022 \n During this period, services will render unloadable and not be publicy accesible.")</script>-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+<style type="text/css">
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        filter:alpha(opacity=70);
+        -moz-opacity:0.7;
+        -khtml-opacity: 0.7;
+        opacity: 0.7;
+        z-index: 100;
+        display: none;
+    }
+    .cnt223 a{
+        text-decoration: none;
+    }
+    .popup{
+        width: 100%;
+        margin: 0 auto;
+        display: none;
+        position: fixed;
+        z-index: 101;
+    }
+    .cnt223{
+        min-width: 600px;
+        width: 600px;
+        min-height: 150px;
+        margin: 100px auto;
+        background: #f3f3f3;
+        position: relative;
+        z-index: 103;
+        padding: 15px 35px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px #000;
+    }
+    .cnt223 p{
+        clear: both;
+        color: #555555;
+        /* text-align: justify; */
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    .cnt223 p a{
+        color: #d91900;
+        font-weight: bold;
+    }
+    .cnt223 .x{
+        float: right;
+        height: 35px;
+        left: 22px;
+        position: relative;
+        top: -25px;
+        width: 34px;
+    }
+    .cnt223 .x:hover{
+        cursor: pointer;
+    }
+</style>
+<script type='text/javascript'>
+    $(function(){
+        var overlay = $('<div id="overlay"></div>');
+        overlay.show();
+        overlay.appendTo(document.body);
+        $('.popup').show();
+        $('.close').click(function(){
+            $('.popup').hide();
+            overlay.appendTo(document.body).remove();
+            return false;
+        });
 
+
+
+
+        $('.x').click(function(){
+            $('.popup').hide();
+            overlay.appendTo(document.body).remove();
+            return false;
+        });
+    });
+</script>
+<div class='popup'>
+    <div class='cnt223'>
+        <h1>Important Notice</h1>
+        <p>
+            Due to our <b>Server Maintenance & Mitigation</b>, we will be temporarily shuddering the user of this site.
+        </p>
+        <hr>
+        <p>If you have any questions, please contact either RossM.#9999 (First Contact) or CCP_UNIT0002#1910 (Second Contact)</p>
+        <br>
+        <p>&#9432; <i>If you know what you're doing, you can easily dismiss this message. ;)</i></p>
+    </div>
+</div>
 <div style="text-align: center;">
 
     <div class="jumbotron jumbotron-fluid">
 
         <div class="container">
             <img src="/images/SGO-logo.png" alt="sgo_logo"  height="100">  <br>
-            <h1 class="display-4">New Jersey State Government Office </h1>
+            <h1 class="display-4">Liberty State Government Office </h1>
             <BR>
             <p class="line-1 anim-typewriter">Innovating Change, Designing Standards.</p>
             <!--      <em>Innovating Change, Designing Standards.</em>-->
@@ -29,7 +126,7 @@
 </div>
 
 <div class="fixer">
-    <p>Property of New Jersey State Government Office.</p>
+    <p>Property of Liberty State Government Office.</p>
 </div>
 </body>
 
@@ -105,7 +202,7 @@
         background-attachment: fixed;
         background-size: cover;
         color: saddlebrown;
-        text-shadow: -1px 1px 2px #000,
+        /*text-shadow: -1px 1px 2px #000,*/
         1px 1px 2px #000,
         1px -1px 0 #000,
         -1px -1px 0 #000;
@@ -139,6 +236,12 @@
         to{border-right-color: transparent;}
     }</style>
 
+
+
+
+
+<!-- Atlassian -->
+<script data-jsd-embedded data-key="c0eae1b2-90d8-4993-a7c0-b7b693d13945" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
 
 <!-- Meta Info -->
 <meta property="og:title" content="Homepage">
