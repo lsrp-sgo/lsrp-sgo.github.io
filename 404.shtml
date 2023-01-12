@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+
+  <title>Page not found - State Government Office</title>
+  <base target="_blank">
+  <link rel="icon" href="/images/SGO-logo.png">
+  <style type="text/css" media="screen">
+    body {
+      background-color: #f1f1f1;
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .container { margin: 50px auto 40px auto; width: 600px; text-align: center; }
+
+    a { color: rgba(0, 0, 0, 0.5); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h1 { width: 800px; position:relative; left: -100px; letter-spacing: -1px; line-height: 60px; font-size: 60px; font-weight: 100; margin: 0px 0 50px 0; text-shadow: 0 1px 0 #fff; }
+    p { color: rgba(0, 0, 0, 0.5); margin: 20px 0; line-height: 1.6; }
+
+    ul { list-style: none; margin: 25px 0; padding: 0; }
+    li { display: table-cell; font-weight: bold; width: 1%; }
+
+    #suggestions {
+      margin-top: 35px;
+      color: #ccc;
+    }
+    #suggestions a {
+      color: #666666;
+      font-weight: 200;
+      font-size: 14px;
+      margin: 0 10px;
+    }
+    /* Popup container - can be anything you want */
+    .popup {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* The actual popup */
+    .popup .popuptext {
+      visibility: hidden;
+      width: 160px;
+      background-color: #555;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 8px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      margin-left: -80px;
+    }
+
+    /* Popup arrow */
+    .popup .popuptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #555 transparent transparent transparent;
+    }
+
+    /* Toggle this class - hide and show the popup */
+    .popup .show {
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+
+    /* Add animation (fade in the popup) */
+    @-webkit-keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity:1 ;}
+    }
+    .btn {
+      border: none;
+      color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .default {background-color: #e7e7e7; color: black;} /* Gray */
+    .default:hover {background: #ddd;}
+  </style>
+</head>
+<body data-new-gr-c-s-check-loaded="14.1085.0" data-gr-ext-installed="">
+
+<div class="container">
+
+  <h1><div class="blink">404</div></h1>
+  <hr>
+  <p><strong>Page not found - Requested Path: (<!--#echo var="REQUEST_URI" -->)</p>
+
+  <p>
+    This page might be under reconstruction, is currently being created, or might have never existed...
+  </p>
+
+  <p>
+    If you continue to experience this issue, please contact the <span class="popup" onmouseover="myFunction()" style="text-decoration:underline">site administrator(s)<span class="popuptext" id="myPopup">CCP_UNIT0002#1910 or RossM.#9999</span></span>, or open a ticket in the State Government Office server.
+  </p>
+
+  <a href="/index.html" target="_self"><button class="btn default">Return to Menu</button></a>
+
+  <div id="suggestions">
+    <a href="https://discord.gg/NT8kDSrbt6">Discord Server</a> —
+    <a href="https://status.rlmtech.xyz/">HostMaster Status</a>
+  </div>
+
+  <div style="margin-top:25px;">
+    <img width="32" height="32" src="/images/SGO-logo.png">
+  </div>
+
+</div>
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+</script>
+</body>
+
+<style>.blink {
+  animation: blinker 1s linear infinite;
+  display: inline;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}</style>
+</html>
