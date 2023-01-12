@@ -14,5 +14,5 @@ Credit: Vasek & RM.
 
 
 ### Notice
-Not for reproduction, reuse, or "high-inspiration". Use of the source code to host content geared at defameing, defrauding, or demarking credile LSRP or LSRP's SGO Sites is STRICTLY prohibited & will result in a blacklist of use of LSRP Services. 
+Not for reproduction, reuse, or "high-inspiration". Use of the source code to host content geared at defaming, defrauding, or demarking credible LSRP (Liberty State Roleplay) and it's subservices or LSRP's SGO Sites is STRICTLY prohibited & will result in a blacklist of use of LSRP Services. 
 Using the source code to manipulate bugs or exploit systems is also strictly banned.
