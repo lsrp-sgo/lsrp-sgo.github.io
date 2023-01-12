@@ -1,0 +1,1 @@
+sudo git pull && chown -v government:government /home/government/public_html/
